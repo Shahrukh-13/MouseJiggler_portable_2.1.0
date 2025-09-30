@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>MouseJiggler</id>
+    <version>2.1.0</version>
+    <title>MouseJiggler</title>
+    <authors>Alistair J. R. Young, Dimitris Panokostas</authors>
+    <license type="expression">MIT</license>
+    <licenseUrl>https://licenses.nuget.org/MIT</licenseUrl>
+    <readme>README.md</readme>
+    <projectUrl>https://github.com/arkane-systems/mousejiggler</projectUrl>
+    <description>A utility to continuously jiggle the mouse pointer to prevent screen saver activation.
+
+Tick the 'Jiggling?' checkbox to begin jiggling the mouse; untick it to stop. 
+The 'Zen jiggle?' checkbox (under "Settings...") enables a mode in which the pointer is jiggled 'virtually' - the system believes it to be moving and thus screen saver activation, etc., is prevented, but the pointer does not actually move. 
+This may not work for idle detection under all applications.
+
+Command line options:
+-j --jiggle: Start with jiggling enabled
+-m --minimized: Start minimized
+-z --zen: Start with zen (invisible) jiggling enabled
+-s 60 --seconds 60: Set number of seconds for the jiggle interval (1-10800)</description>
+    <copyright>Copyright © Alistair J. R. Young 2007-2025</copyright>
+    <repository type="git" url="https://github.com/arkane-systems/mousejiggler" commit="dd386c8c119cb020aa7244b41160f72844f7289d" />
+    <dependencies>
+      <group targetFramework="net9.0-windows7.0">
+        <dependency id="JetBrains.Annotations" version="2024.3.0" exclude="Build,Analyzers" />
+        <dependency id="System.CommandLine" version="2.0.0-beta1.20574.7" exclude="Build,Analyzers" />
+        <dependency id="System.Memory" version="4.6.0" exclude="Build,Analyzers" />
+        <dependency id="System.Runtime.CompilerServices.Unsafe" version="6.1.0" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+    <frameworkReferences>
+      <group targetFramework="net9.0-windows7.0">
+        <frameworkReference name="Microsoft.WindowsDesktop.App.WindowsForms" />
+      </group>
+    </frameworkReferences>
+  </metadata>
+  <files>
+    <file src="C:\Users\mshah\OneDrive\Desktop\Projects\MouseJiggler_portable_2.1.0\MouseJiggler_portable\MouseJiggler\bin\Debug\net9.0-windows7.0\win-x64\MouseJiggler.runtimeconfig.json" target="lib\net9.0-windows7.0\MouseJiggler.runtimeconfig.json" />
+    <file src="C:\Users\mshah\OneDrive\Desktop\Projects\MouseJiggler_portable_2.1.0\MouseJiggler_portable\MouseJiggler\bin\Debug\net9.0-windows7.0\win-x64\MouseJiggler.dll" target="lib\net9.0-windows7.0\MouseJiggler.dll" />
+    <file src="C:\Users\mshah\OneDrive\Desktop\Projects\MouseJiggler_portable_2.1.0\MouseJiggler_portable\README.md" target="\README.md" />
+  </files>
+</package>
