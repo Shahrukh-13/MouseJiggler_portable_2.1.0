@@ -56,7 +56,7 @@ dlldata.c
 *.pidb
 *.svclog
 *.scc
-# dll file prbably needs to be taken out from here
+# dll file prbably needs to be taken out from here.
 *.dll    
 
 # Chutzpah Test files
